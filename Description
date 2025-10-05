@@ -1,0 +1,29 @@
+
+📊 Project Goal
+The core objective is to deliver a Star Schema Data Model that is optimized for fast and flexible reporting. Key business demands include:
+
+Sales Trend Analysis: Tracking sales over a two-year historical window.
+
+Performance Comparison: Measuring current sales against the annual budget (for 2021).
+
+Detailed Segmentation: Providing drill-down capabilities for Sales Representatives to analyze performance by individual Customer and Product.
+
+🏗️ Data Architecture & Contents
+The project is structured using a classic data warehousing approach, containing one fact table and three dimension tables, along with the SQL scripts used for ETL (Extraction, Transformation, Loading) logic.
+
+File Type	File Name Example	Description
+Fact Table	FACT_InternetSales.csv/.sql	The central table containing sales amounts, keys for dimensions, and order details.
+Dimension Tables	DIM_Customers.csv/.sql	Provides customer context (Name, Gender, City) for segmentation.
+DIM_Products.csv/.sql	Provides product context (Category, Sub-Category, Color, Size) for analysis.
+DIM_Calendar.csv/.sql	A complete date dimension for granular time-based analysis (Year, Quarter, Month, Day).
+Documentation	Business Demand Overview & User Stories.docx	The source document outlining the business requirements and acceptance criteria for the final Power BI dashboard.
+
+EXPORT TO SHEETS
+🛠️ Key Technologies
+Data Modeling: Star Schema
+
+Data Transformation: SQL (.sql scripts provided reflect the cleansing and shaping logic based on an underlying source like AdventureWorksDW).
+
+Data Storage: CSV (for portability and ease of use/demonstration).
+
+Intended Visualization Layer: Power BI (as requested in the user stories).
